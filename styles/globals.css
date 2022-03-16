@@ -1,0 +1,109 @@
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 0.25rem;
+  border: 1px solid #3246a8;
+  background-color: #93a3ed;
+  color: #F3F3F3;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  padding: 0.5rem;
+}
+
+button:hover {
+  background-color: #3246a8;
+  color: white;
+}
+
+
+.toast {
+  padding: 1.25rem;
+  background-color: white;
+  border: 1px solid #CCC;
+  border-radius: 0.25rem;
+  position: relative;
+  cursor: pointer;
+  max-width: 300px;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.toast-container[data-position="top-center"] .toast {
+  transform: translateY(-100vh);
+}
+
+.toast-container[data-position="bottom-center"] .toast {
+  transform: translateY(100vh);
+}
+
+.toast-container[data-position$="-right"] .toast {
+  transform: translateX(110%);
+}
+
+.toast-container[data-position$="-left"] .toast {
+  transform: translateX(-110%);
+}
+
+
+
+.toast-container .toast.show {
+  transform: translate(0, 0);
+}
+
+.toast.progress::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: calc(100% * var(--progress));
+  background-color: #3246a8;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.toast-container {
+  position: fixed;
+  margin: 10px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Usando RegExp para aplicar o CSS */
+.toast-container[data-position^="top-"] {
+  top: 0;
+}
+
+.toast-container[data-position^="bottom-"] {
+  bottom: 0;
+}
+
+.toast-container[data-position$="-right"] {
+  right: 0;
+}
+
+.toast-container[data-position$="-left"] {
+  left: 0;
+}
+
+.toast-container[data-position$="-center"] {
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+
+
+
+
+
+
+
+
