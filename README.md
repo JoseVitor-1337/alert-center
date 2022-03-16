@@ -48,9 +48,4 @@ yarn dev
 
 ## Versions
 
-<p>
-  ![Badge](https://img.shields.io/static/v1?label=npm&message=v6.14.13&color=blue&style=<STYLE>&logo=<LOGO>)
-  ![Badge](https://img.shields.io/static/v1?label=npm&message=v6.14.13&color=blue&style=<STYLE>&logo=<LOGO>)
-  ![Badge](https://img.shields.io/static/v1?label=npm&message=v6.14.13&color=blue&style=<STYLE>&logo=<LOGO>)
-  ![Badge](https://img.shields.io/static/v1?label=npm&message=v6.14.13&color=blue&style=<STYLE>&logo=<LOGO>)
-</p>
+![Badge](https://img.shields.io/static/v1?label=npm&message=v6.14.13&color=blue&style=<STYLE>&logo=<LOGO>)
